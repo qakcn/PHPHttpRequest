@@ -76,7 +76,7 @@ class FormData {
      * @access public
      */
     public function __set($name, $value) {
-        if($name=='multipart')) {
+        if($name=='multipart') {
             $this->$name = (bool)$value;
         }
     }

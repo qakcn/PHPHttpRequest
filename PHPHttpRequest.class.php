@@ -1,7 +1,7 @@
 <?php
 
 /**
- * HttpRequest API
+ * PHPHttpRequest API
  *
  * Methods are like JavaScript XMLHttpRequest's
  * Response store in private property $response as PHPHttpResponse instance
@@ -127,6 +127,7 @@ class PHPHttpRequest {
     public function setRequestHeader($name, $value) {
         if(strtolower(trim($name))!='cookie') {
             $this->headers[trim($name)] = trim($value);
+        }
     }
 
 
@@ -231,6 +232,4 @@ class PHPHttpRequest {
         }
         return false;
     }
-
-
 }
